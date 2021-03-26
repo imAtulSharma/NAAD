@@ -1,4 +1,4 @@
-package com.streamliners.task0;
+package com.streamliners.task0.introduction;
 
 import java.util.Scanner;
 
