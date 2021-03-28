@@ -1,7 +1,5 @@
 package com.streamliners.task3.task3_1;
 
-import java.util.Objects;
-
 public class Product {
     private String mName;
     private int mPrice;
@@ -27,10 +25,7 @@ public class Product {
     public boolean equals(Object o) {
         Product product = (Product) o;
 
-        if (this.mName.equals(product.getName())) {
-            return true;
-        }
-        return false;
+        return this.mName.equals(product.getName());
     }
 
     @Override
