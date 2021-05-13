@@ -4,21 +4,11 @@ import java.util.Scanner;
 
 public class DirectlyProportional {
     public static boolean isDirectlyProportional(int[] x, int[] y) {
+        float ratio = (float) x[0] / y[0];
+
         for (int i = 1; i < x.length; i++) {
-            if (x[i] > x[i-1]) {
-                if(y[i] < y[i-1]) {
-                    return false;
-                }
-            }
-            else if (x[i] < x[i-1]) {
-                if(y[i] > y[i-1]) {
-                    return false;
-                }
-            }
-            else {
-                if (y[i] != y[i-1]) {
-                    return false;
-                }
+            if ((float) x[i]/y[i] != ratio) {
+                return false;
             }
         }
         return true;
